@@ -1,54 +1,52 @@
-# Logs
-logs
-*.log
+# -------------------------
+# Node modules and logs
+# -------------------------
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+.expo/
+.expo-shared/
 
-# Dependency directories
-node_modules
-**/node_modules
-
-# Build output
-dist
-build
-android/app/build
-ios/build
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# -------------------------
+# macOS system files
+# -------------------------
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 
-# OS generated files
-Thumbs.db
-._*
+# -------------------------
+# Expo specific files
+# -------------------------
+*.expo
+*.expo.js
 
-# Personal files
-*.local
-
+# -------------------------
 # Environment variables
+# -------------------------
 .env
-.env.local
-.env.development
-.env.development.local
-.env.test
-.env.test.local
-.env.production
-.env.production.local
+.env.*
 
-# Android specific files
-android/local.properties
-android/*.keystore
+# -------------------------
+# iOS / Android native builds (only if using EAS bare workflow or ejecting)
+# -------------------------
+ios/
+android/
+*.xcworkspace
+*.xcodeproj
+*.idea/
+*.gradle/
+*.iml
+build/
 
-# iOS specific files
-ios/Podfile.lock
-ios/Pods
+# -------------------------
+# VSCode and other IDE settings
+# -------------------------
+.vscode/
+*.swp
+*.swo
+
+# -------------------------
+# Other
+# -------------------------
+coverage/
+dist/
+web-build/
